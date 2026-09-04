@@ -1,0 +1,33 @@
+{
+    "models": {
+        "Linear Regression": {
+            "MAE": 6.022,
+            "RMSE": 16.617,
+            "R2": 0.9795
+        },
+        "Decision Tree": {
+            "MAE": 7.319,
+            "RMSE": 18.99,
+            "R2": 0.9733
+        },
+        "Random Forest": {
+            "MAE": 6.299,
+            "RMSE": 15.419,
+            "R2": 0.9824
+        },
+        "Gradient Boosting": {
+            "MAE": 6.116,
+            "RMSE": 14.84,
+            "R2": 0.9837
+        }
+    },
+    "best_model": "Gradient Boosting",
+    "best_metrics": {
+        "MAE": 6.116,
+        "RMSE": 14.84,
+        "R2": 0.9837
+    },
+    "feature_count": 14,
+    "target_col": "Usage",
+    "unit": "Mega Units (MU)"
+}
