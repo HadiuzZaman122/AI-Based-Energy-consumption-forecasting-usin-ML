@@ -1,0 +1,6 @@
+Model Name,MAE (MU),MSE (MU^2),RMSE (MU),R2 Score,MAPE (%),Median Absolute Error (MU),Explained Variance,Is Best Model
+Linear Regression,6.109,232.896,15.261,0.9827,11.13,1.695,0.9827,False
+Decision Tree,7.044,344.318,18.556,0.9745,8.22,1.561,0.9745,False
+Random Forest,6.128,220.816,14.86,0.9836,7.42,1.589,0.9836,False
+Gradient Boosting,6.111,207.653,14.41,0.9846,9.6,1.572,0.9846,False
+XGBoost,6.04,197.193,14.043,0.9854,10.28,1.755,0.9854,True

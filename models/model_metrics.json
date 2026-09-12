@@ -1,33 +1,83 @@
 {
     "models": {
         "Linear Regression": {
-            "MAE": 6.022,
-            "RMSE": 16.617,
-            "R2": 0.9795
+            "MAE": 6.109,
+            "MSE": 232.896,
+            "RMSE": 15.261,
+            "R2": 0.9827,
+            "MAPE": 11.13,
+            "MedAE": 1.695,
+            "Explained_Variance": 0.9827
         },
         "Decision Tree": {
-            "MAE": 7.319,
-            "RMSE": 18.99,
-            "R2": 0.9733
+            "MAE": 7.044,
+            "MSE": 344.318,
+            "RMSE": 18.556,
+            "R2": 0.9745,
+            "MAPE": 8.22,
+            "MedAE": 1.561,
+            "Explained_Variance": 0.9745
         },
         "Random Forest": {
-            "MAE": 6.299,
-            "RMSE": 15.419,
-            "R2": 0.9824
+            "MAE": 6.128,
+            "MSE": 220.816,
+            "RMSE": 14.86,
+            "R2": 0.9836,
+            "MAPE": 7.42,
+            "MedAE": 1.589,
+            "Explained_Variance": 0.9836
         },
         "Gradient Boosting": {
-            "MAE": 6.116,
-            "RMSE": 14.84,
-            "R2": 0.9837
+            "MAE": 6.111,
+            "MSE": 207.653,
+            "RMSE": 14.41,
+            "R2": 0.9846,
+            "MAPE": 9.6,
+            "MedAE": 1.572,
+            "Explained_Variance": 0.9846
+        },
+        "XGBoost": {
+            "MAE": 6.04,
+            "MSE": 197.193,
+            "RMSE": 14.043,
+            "R2": 0.9854,
+            "MAPE": 10.28,
+            "MedAE": 1.755,
+            "Explained_Variance": 0.9854
         }
     },
-    "best_model": "Gradient Boosting",
+    "best_model": "XGBoost",
     "best_metrics": {
-        "MAE": 6.116,
-        "RMSE": 14.84,
-        "R2": 0.9837
+        "MAE": 6.04,
+        "MSE": 197.193,
+        "RMSE": 14.043,
+        "R2": 0.9854,
+        "MAPE": 10.28,
+        "MedAE": 1.755,
+        "Explained_Variance": 0.9854
     },
-    "feature_count": 14,
+    "feature_count": 17,
+    "feature_names": [
+        "Month",
+        "Day",
+        "DayOfWeek",
+        "IsWeekend",
+        "Quarter",
+        "DayOfYear",
+        "WeekOfYear",
+        "latitude",
+        "longitude",
+        "States_Encoded",
+        "Regions_Encoded",
+        "Usage_Lag_1",
+        "Usage_Lag_2",
+        "Usage_Lag_7",
+        "Usage_Rolling_Mean_7",
+        "Usage_Rolling_Mean_14",
+        "Usage_Rolling_Std_7"
+    ],
     "target_col": "Usage",
-    "unit": "Mega Units (MU)"
+    "unit": "Mega Units (MU)",
+    "train_records": 13287,
+    "test_records": 3300
 }
